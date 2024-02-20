@@ -1,8 +1,7 @@
 package ihihihi;
 
-//ewq
+//3:26
 import java.util.Scanner;
-//2.35;kmsewpojfewjoipewf
 	public class lab2<T> {
 	    private Object[] elements;
 	    private int size;
@@ -27,8 +26,6 @@ import java.util.Scanner;
 	    public int size() {
 	        return size;
 	    }
-
-
 
 	    public void remove(int index) {
 	        if (index < 0 || index >= size) {
@@ -84,7 +81,7 @@ import java.util.Scanner;
 		        if (blist.size() == 0) {
 		            System.out.println("Хоосон байна");
 		        } else {
-		            int highestNumber = Integer.MIN_VALUE;
+		        	int highestNumber =0;
 		            for (int i = 0; i < blist.size(); i++) {
 		                B bObj = blist.get(i);
 		                if (bObj.getnumber() > highestNumber) {
@@ -98,7 +95,8 @@ import java.util.Scanner;
 		        if (blist.size() == 0) {
 		            System.out.println("Хоосон байна");
 		        } else {
-		            int lowestNumber = Integer.MAX_VALUE;
+		        	int lowestNumber = 0;
+		           // int lowestNumber = Integer.MAX_VALUE;
 		            for (int i = 0; i < blist.size(); i++) {
 		                B bObj = blist.get(i);
 		                if (bObj.getnumber() < lowestNumber) {
