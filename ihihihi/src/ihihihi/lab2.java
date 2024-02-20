@@ -1,6 +1,6 @@
 package ihihihi;
 
-
+//ewq
 import java.util.Scanner;
 //2.35;kmsewpojfewjoipewf
 	public class lab2<T> {
