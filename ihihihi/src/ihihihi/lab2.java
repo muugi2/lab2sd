@@ -14,7 +14,6 @@ import java.util.Scanner;
 	    }
 
 	    public void add(T element) {
-	        //ensureCapacity();
 	        elements[size++] = element;
 	    }
 
@@ -29,14 +28,7 @@ import java.util.Scanner;
 	        return size;
 	    }
 
-//	    public boolean contains(T element) {
-//	        for (int i = 0; i < size; i++) {
-//	            if (elements[i].equals(element)) {
-//	                return true;
-//	            }
-//	        }
-//	        return false;
-//	    }
+
 
 	    public void remove(int index) {
 	        if (index < 0 || index >= size) {
@@ -45,16 +37,6 @@ import java.util.Scanner;
 	        System.arraycopy(elements, index + 1, elements, index, size - index - 1);
 	        size--;
 	    }
-
-//	    private void ensureCapacity() {
-//	        if (size == elements.length) {
-//	            int newCapacity = elements.length * 2;
-//	            Object[] newArray = new Object[newCapacity];
-//	            System.arraycopy(elements, 0, newArray, 0, elements.length);
-//	            elements = newArray;
-//	        }
-//	    }
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		lab2<B> blist = new lab2<>();
