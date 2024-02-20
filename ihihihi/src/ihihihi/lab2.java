@@ -2,7 +2,7 @@ package ihihihi;
 
 
 import java.util.Scanner;
-
+//2.35
 	public class lab2<T> {
 	    private Object[] elements;
 	    private int size;
