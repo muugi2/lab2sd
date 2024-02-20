@@ -1,6 +1,6 @@
 package ihihihi;
 
-//3:26
+//3:27
 import java.util.Scanner;
 	public class lab2<T> {
 	    private Object[] elements;
