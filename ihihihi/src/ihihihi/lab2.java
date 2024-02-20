@@ -1,6 +1,6 @@
 package ihihihi;
 
-//3:27
+//3:40
 import java.util.Scanner;
 	public class lab2<T> {
 	    private Object[] elements;
@@ -46,13 +46,12 @@ import java.util.Scanner;
 			System.out.println("2.Борлуулагч хасах");
 			System.out.println("3.Борлуулалтын түүхийг харах");
 			System.out.println("4.Хамгийн их борлуулалт хийсэн");
-			System.out.println("5.Хамгийн бага борлуулалт хийсэн");
-			System.out.println("6.Дуусгах");
+			System.out.println("5.Дуусгах");
 			int b = sc.nextInt();
 			switch (b) {
 		    case 1:
 		        System.out.println("Борлуулагчийн нэр:");
-		        sc.nextLine(); // Consume newline character
+		        sc.nextLine(); 
 		        String name = sc.nextLine();
 		        System.out.println("Борлуулалтын тоо:");
 		        int number = sc.nextInt();
@@ -92,21 +91,6 @@ import java.util.Scanner;
 		        }
 		        break;
 		    case 5:
-		        if (blist.size() == 0) {
-		            System.out.println("Хоосон байна");
-		        } else {
-		        	int lowestNumber = 0;
-		           // int lowestNumber = Integer.MAX_VALUE;
-		            for (int i = 0; i < blist.size(); i++) {
-		                B bObj = blist.get(i);
-		                if (bObj.getnumber() < lowestNumber) {
-		                    lowestNumber = bObj.getnumber();
-		                }
-		            }
-		            System.out.println("Хамгийн бага борлуулалтын тоо: " + lowestNumber);
-		        }
-		        break;
-		    case 6:
 		        System.exit(0);
 		        break;
 		    default:
